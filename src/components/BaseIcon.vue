@@ -3,12 +3,13 @@
     <svg class="icon" :width="width" :height="height">
       <use v-bind="{ 'xlink:href': '/feather-sprite.svg#' + name }" />
     </svg>
-    <slot name="countPeople"></slot>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Icon',
   props: {
     name: String,
     width: {
